@@ -1,56 +1,70 @@
-/* 미디어 아이템 레이아웃 (세로 정렬로 수정) */
-.project-media {
-    display: flex;
-    flex-direction: column; /* 세로로 쌓기 */
-    align-items: center;    /* 가운데 정렬 */
-    gap: 40px;              /* 사진과 영상 사이의 간격 */
-    margin-top: 30px;
-    max-width: 800px;       /* 너무 퍼지지 않게 너비 제한 */
-    margin-left: auto;
-    margin-right: auto;
+/* 기본 설정 수정 */
+body {
+    line-height: 1.6;
+    color: #ffffff;      /* 전체 글자색을 흰색으로 */
+    background-color: #121212; /* 배경을 진한 검은색으로 */
+    scroll-behavior: smooth;
 }
 
-.media-item {
-    width: 100%;            /* 컨테이너 너비에 맞춤 */
-    text-align: center;     /* 제목과 텍스트 중앙 정렬 */
-}
-
-/* 이미지 스타일 */
-.portfolio-img {
-    width: 100%;
-    max-width: 600px;       /* 사진이 너무 커지지 않게 제한 */
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    margin-bottom: 10px;
-}
-
-/* 유튜브 반응형 박스 */
-.video-container {
+/* 헤더 색상 변경 */
+header {
+    background: #1a1a1a;  /* 헤더는 약간 밝은 검은색 */
+    border-bottom: 1px solid #333;
+    padding: 30px 0;
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 비율 유지 */
-    height: 0;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    max-width: 700px;       /* 영상 너비 제한 */
-    margin: 0 auto;         /* 영상 중앙 정렬 */
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    z-index: 1000;
 }
 
-.media-item h4 {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-    color: #555;
+nav ul li a {
+    text-decoration: none;
+    color: #bbbbbb;      /* 메뉴 글자는 약간 연한 회색 */
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-html {
-    scroll-behavior: smooth; /* JS 없이도 부드러운 스크롤을 만들어줍니다 */
+nav ul li a:hover {
+    color: #ffffff;      /* 마우스 올리면 완전 흰색으로 */
+}
+
+/* 섹션 배경색 통일 */
+.section {
+    padding: 80px 0;
+}
+
+.gray-bg {
+    background-color: #1e1e1e; /* 구분되는 섹션은 살짝 밝게 */
+}
+
+h2 {
+    color: #ffffff;
+}
+
+/* 이력 아이템 박스 수정 */
+.history-item {
+    background: #252525;  /* 박스 배경색 */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* 그림자도 어둡게 */
+}
+
+.history-item h3 {
+    color: #4da3ff;      /* 파란색 포인트를 조금 더 밝은 톤으로 변경 */
+}
+
+/* 장점 리스트 카드 수정 */
+.strength-card {
+    border-left: 5px solid #4da3ff;
+    padding: 20px;
+    background: #1e2a38;  /* 어두운 파란색 계열 배경 */
+    border-radius: 0 10px 10px 0;
+}
+
+.strength-card p {
+    color: #cccccc;      /* 본문 글씨는 가독성을 위해 살짝 연하게 */
+}
+
+footer {
+    background: #000000;
+    color: #888888;
 }
