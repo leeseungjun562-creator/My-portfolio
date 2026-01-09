@@ -1,13 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> my fortfolio</title>
+    <title>나의 포트폴리오</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>나의 포털!</h1>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#strengths">Strengths</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h1>안녕하세요, <span class="highlight">도전하는 개발자 OOO</span>입니다.</h1>
+            <p class="intro-text">
+                성실함과 끈기를 바탕으로 문제를 해결하는 것을 좋아합니다.<br>
+                HTML, CSS, JS를 활용해 사용자 중심의 웹 서비스를 만들고 싶습니다.
+            </p>
+        </div>
+    </section>
+
+    <section id="history" class="section gray-bg">
+        <div class="container">
+            <h2>Experience & Education</h2>
+            <div class="history-grid">
+                <div class="history-item">
+                    <h3>🎓 학력</h3>
+                    <ul>
+                        <li>미래산업과학고등학교 재학중</li>
+                    </ul>
+                </div>
+                <div class="history-item">
+                    <h3>자격증</h3>
+                    <ul>
+                        <li>3D프린터운용기능사 취득(2025.06.27)</li>
+                    </ul>
+                </div>
+                <div class="history-item">
+                    <h3>특별 경력</h3>
+                    <ul>
+                        <li>2025 제1회 서울 직업계고 학생 로봇대회 (SSRC) 대회 종합 우수상(2등)</li>
+                        <div class="project-media">
+    <div class="media-item">
+        <h4>대회 활동 사진</h4>
+        <img src="https://www.e-newsp.com/data/photos/20251251/art_17660360588014_7cad83.png" alt="대회 참가 모습" class="portfolio-img">
+    </div>
+
+    <div class="media-item">
+        <h4>대회 영상</h4>
+        <div class="video-container">
+            <iframe 
+                src="https://youtu.be/TOlSGNLkV4Q?si=KswCzYbtRd88RKkS" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p><a href="https://youtu.be/TOlSGNLkV4Q?si=KswCzYbtRd88RKkS" target="_blank" class="link-btn">👉 유튜브에서 직접 보기</a></p>
+    </div>
+</div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="strengths" class="section">
+        <div class="container">
+            <h2>My Strengths</h2>
+            <div class="strength-list">
+                <div class="strength-card" data-aos="fade-up">
+                    <h4>느리지만 꾸준한 학습능력과 뛰어난 활용력</h4>
+                    <p>남들보다 익히는 시간이 조금 오래걸릴지라도 그걸 완전히 익히고나면 남들이 생각하지못한 방향으로도 그아이디어를 활용할 수 있습니다.</p>
+                </div>
+                <div class="strength-card">
+                    <h4>원활한 커뮤니케이션</h4>
+                    <p>협업 시 상대방의 의견을 경청하고 조율하는 능력이 뛰어납니다.</p>
+                </div>
+                <div class="strength-card">
+                    <h4>꼼꼼한 디테일</h4>
+                    <p>사용자가 느낄 작은 불편함까지 고려하여 코드를 작성합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 </html>
