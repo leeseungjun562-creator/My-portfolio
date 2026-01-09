@@ -1,15 +1,12 @@
-// 모든 내비게이션 링크를 선택
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault(); // 기본 이동 막기
+const header = document.querySelector('header');
 
-        // 클릭한 메뉴의 목적지 id 확인 (#about 등)
-        const targetId = this.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
-
-        // 해당 위치로 부드럽게 이동
-        targetSection.scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        // 50px 이상 스크롤 되면 그림자 추가
+        header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        header.style.transition = '0.3s';
+    } else {
+        // 맨 위로 올라가면 다시 깔끔하게
+        header.style.boxShadow = 'none';
+    }
 });

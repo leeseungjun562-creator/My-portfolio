@@ -50,3 +50,7 @@
     font-size: 1.1rem;
     color: #555;
 }
+
+html {
+    scroll-behavior: smooth; /* JS 없이도 부드러운 스크롤을 만들어줍니다 */
+}
